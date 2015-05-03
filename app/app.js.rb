@@ -1,5 +1,5 @@
 # use sprockets directive to include jquery
-#= require 'jquery.min'
+#= require 'jquery'
 
 require 'opal'
 require 'opal-jquery'

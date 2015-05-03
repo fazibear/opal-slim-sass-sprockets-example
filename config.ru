@@ -13,10 +13,14 @@ sprockets = Sprockets::Environment.new.tap do |s|
   s.append_path 'app'
   s.append_path 'views'
   s.append_path 'styles'
-  s.append_path 'vendor'
 
-  # add path to opal gems
+  # add paths from opal
   Opal.paths.each do |p|
+    s.append_path p
+  end
+
+  # add paths from rails-assets
+  RailsAssets.load_paths.each do |p|
     s.append_path p
   end
 end

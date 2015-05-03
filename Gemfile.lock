@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     hike (1.2.3)
     multi_json (1.11.0)
@@ -11,6 +12,7 @@ GEM
     opal-jquery (0.3.0)
       opal (~> 0.7.0)
     rack (1.6.0)
+    rails-assets-jquery (2.1.4)
     sass (3.4.13)
     slim (3.0.3)
       temple (~> 0.7.3)
@@ -30,5 +32,6 @@ PLATFORMS
 DEPENDENCIES
   opal
   opal-jquery
+  rails-assets-jquery!
   sass
   slim
