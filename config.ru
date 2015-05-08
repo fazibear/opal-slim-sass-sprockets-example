@@ -25,10 +25,16 @@ sprockets = Sprockets::Environment.new.tap do |s|
   end
 end
 
-Opal::Processor.source_map_enabled = false
+source_maps_prefix =  '/__OPAL_SOURCE_MAPS__'
+source_maps = Opal::SourceMapServer.new(sprockets, source_maps_prefix)
+::Opal::Sprockets::SourceMapHeaderPatch.inject!(source_maps_prefix)
 
-puts Opal::Processor.load_asset_code(sprockets, 'app')
+#Opal::Processor.load_asset_code(sprockets, 'app')
 
 map '/' do
   run sprockets
+end
+
+map source_maps_prefix do
+  run source_maps
 end

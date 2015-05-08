@@ -15,3 +15,5 @@ Document.ready? do
     Element.find('#element').text = "Button Clicked!"
   end
 end
+
+puts 'test'
