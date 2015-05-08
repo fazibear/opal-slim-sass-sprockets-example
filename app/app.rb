@@ -1,7 +1,6 @@
 # use sprockets directive to include jquery
-#= require 'jquery'
-
 require 'opal'
+require 'jquery'
 require 'opal-jquery'
 
 Document.ready? do

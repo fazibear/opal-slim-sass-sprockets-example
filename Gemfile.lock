@@ -1,28 +1,34 @@
+GIT
+  remote: git://github.com/opal/opal-jquery.git
+  revision: 2cbba95aeb31bb573445fbb28a19c2ff02e4173a
+  specs:
+    opal-jquery (0.3.0)
+      opal (>= 0.7.0, < 0.9.0)
+
+GIT
+  remote: git://github.com/opal/opal.git
+  revision: 1eb478021c7c6fb03c6df0a52a86af8afe556b66
+  specs:
+    opal (0.8.0.beta1)
+      hike (~> 1.2)
+      sourcemap (~> 0.1.0)
+      sprockets (>= 2.2.3, < 4.0.0)
+      tilt (~> 1.4)
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
     hike (1.2.3)
-    multi_json (1.11.0)
-    opal (0.7.2)
-      hike (~> 1.2)
-      sourcemap (~> 0.1.0)
-      sprockets (>= 2.2.3, < 3.0.0)
-      tilt (~> 1.4)
-    opal-jquery (0.3.0)
-      opal (~> 0.7.0)
-    rack (1.6.0)
+    rack (1.6.1)
     rails-assets-jquery (2.1.4)
     sass (3.4.13)
     slim (3.0.3)
       temple (~> 0.7.3)
       tilt (>= 1.3.3, < 2.1)
     sourcemap (0.1.1)
-    sprockets (2.12.3)
-      hike (~> 1.2)
-      multi_json (~> 1.0)
+    sprockets (3.0.3)
       rack (~> 1.0)
-      tilt (~> 1.1, != 1.3.0)
     temple (0.7.5)
     tilt (1.4.1)
 
@@ -30,8 +36,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  opal
-  opal-jquery
+  opal!
+  opal-jquery!
   rails-assets-jquery!
   sass
   slim

@@ -27,6 +27,8 @@ end
 
 Opal::Processor.source_map_enabled = false
 
+puts Opal::Processor.load_asset_code(sprockets, 'app')
+
 map '/' do
   run sprockets
 end
