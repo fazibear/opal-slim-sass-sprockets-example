@@ -11,7 +11,7 @@ GEM
       tilt (~> 1.4)
     opal-jquery (0.3.0)
       opal (~> 0.7.0)
-    rack (1.6.0)
+    rack (1.6.12)
     rails-assets-jquery (2.1.4)
     sass (3.4.13)
     slim (3.0.3)
